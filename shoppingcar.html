@@ -85,7 +85,7 @@
 		}
 		if(html==""){
 			html+=`<div class="shop-item">
-					<div id="tosy">购物车中还没有商品，请先挑选商品<a href="md-sy.html">去首页</a></div>
+					<div id="tosy">购物车中还没有商品，请先挑选商品<a href="home-page.html">去首页</a></div>
 				</div>`
 		}
 			$(".car-main").html( html );
@@ -155,9 +155,9 @@
 	$("button").click(function(){
 		var arr=getCookie("information")
 		if(arr==""){
-			location.href="http://127.0.0.1/s-object/jiesuan.html"
+			location.href="jiesuan.html"
 		}else{
-			location.href="http://127.0.0.1/s-object/jiesuan2.html"
+			location.href="jiesuan2.html"
 		}
 		
 	})

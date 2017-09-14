@@ -25,7 +25,7 @@
 					<li><a href="http://www.moonbasa.com/m/"><i class="iconfont">&#xe70f;</i>手机版</a></li>
 					<li><a href="">收藏梦芭莎</a></li>
 					<li><a href="">English</a></li>
-					<li><a href="http://127.0.0.1/s-object/shoppingcar.html">购物车<i class="iconfont">&#xe887;</i></a></li>
+					<li><a href="shoppingcar.html">购物车<i class="iconfont">&#xe887;</i></a></li>
 				</ul>
 			</div>
 		</header>
@@ -198,7 +198,7 @@
 	var pid = arr.split("&")[0].split("=")[1];
 	$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/s-object/js/data.json",
+		url:"js/data.json",
 		success : function(res){
 			var str = "";
 			for(var i in res){
@@ -233,7 +233,7 @@
 								数量：<input type="number" max="5" value="1" min="1"  style=" font-size: 20px; width: 50px; margin: 0 10px;"/>现在有货
 							</div>
 							<div style="display: flex; justify-content: space-around;">
-								<a href="http://127.0.0.1/s-object/shoppingcar.html" id="shop">立即购买</a>
+								<a href="shoppingcar.html" id="shop">立即购买</a>
 								<a id="tocar">加入购物车</a>
 								<span data-id=${res[i].id}  data-name=${res[i].name} data-src=${res[i].src} data-price=${res[i].price}  style="display:none"></span>
 							</div>
@@ -327,7 +327,7 @@
 				setCookie("shoplist",JSON.stringify(arr));
 				var f = confirm("是否继续购买?确定--继续购买，取消---去购物车结算");
 				if( !f ){
-					location.href = "http://127.0.0.1/s-object/shoppingcar.html";
+					location.href = "shoppingcar.html";
 				}else{
 					location.reload()
 				}

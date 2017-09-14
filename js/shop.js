@@ -1,14 +1,14 @@
 	$(function(){
 		$.ajax({
 			type:"get",
-			url:"http://127.0.0.1/s-object/js/data.json",
+			url:"js/data.json",
 			success : function(res){
 				var html = "";
 				//console.log(res)
 				for (var  i in  res) {
 					var ch = res[i];//{}
 					html += `<li>
-								<a href="http://127.0.0.1/s-object/Detail-pages.html?id=${ch.id}&src=${ch.src}&name=${ch.name}&price=${ch.price}">
+								<a href="Detail-pages.html?id=${ch.id}&src=${ch.src}&name=${ch.name}&price=${ch.price}">
 									<img src="img/imgs/${ch.src}" alt="" />
 									<div class="title">${ch.name}</div>
 									<div class="price">￥${ch.price}</div>

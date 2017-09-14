@@ -14,7 +14,7 @@
 		
 		<div id="js-box">
 			<div id="information">
-				<p class="pp">收货信息<a href="http://127.0.0.1/s-object/jiesuan.html">[修改]</a></p>
+				<p class="pp">收货信息<a href="jiesuan.html">[修改]</a></p>
 				<div class="get-cookie"> 
 					<span class="us1"></span>
 					<span class="us2"></span>
@@ -85,7 +85,7 @@
 	}
 	var arr=getCookie("information")
 	if(arr==""){
-		location.href="http://127.0.0.1/s-object/jiesuan.html"
+		location.href="jiesuan.html"
 	}
 	for(var i in arr){
 		console.log(arr[i])
@@ -118,10 +118,10 @@
 	$("#tab-main").html(html)
 	$(".sum").html(sum)
 	$("#tab-main").on("click","tr>td:first",function(){
-		location.href="http://127.0.0.1/s-object/shoppingcar.html"
+		location.href="shoppingcar.html"
 	})
 	$("button").click(function(){
-		location.href="http://127.0.0.1/s-object/jiesuan3.html"
+		location.href="jiesuan3.html"
 	})
 
 </script>

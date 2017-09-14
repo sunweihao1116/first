@@ -76,7 +76,7 @@ $("#btn").click(function(){
 		}
 		arr.push(_json)
 		setCookie("information",JSON.stringify(arr),"1")
-		location.href="http://127.0.0.1/s-object/jiesuan2.html"
+		location.href="jiesuan2.html"
 	}else{
 		if($("#name").val()==""){
 			$("#s1").html("请填写用户名");
@@ -90,7 +90,7 @@ $("#btn").click(function(){
 					$("#s4").html("请输入正确的邮政编码");
 					return
 				}else{
-					window.open("http://127.0.0.1/s-object/tanchu-window.html","_blank","width=300,height=200,left=400,top=400")
+					window.open("tanchu-window.html","_blank","width=300,height=200,left=400,top=400")
 				}
 			}
 		}

@@ -15,13 +15,13 @@ $("#right").on("mouseenter","a",function(){
 		
 	})
 	$("#car-main").on("click","dl",function(){
-		location.href="http://127.0.0.1/s-object/shoppingcar.html"
+		location.href="shoppingcar.html"
 	})
 	
 	$("#dl").click(function(){
-		location.href="http://127.0.0.1/s-object/login.html"
+		location.href="login.html"
 	})
 	$("#zc").click(function(){
-		location.href="http://127.0.0.1/s-object/zc.html"
+		location.href="zc.html"
 	})
 	
